@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Google Forms</title>
+    <title>Google Form</title>
     <style>
-        * {
+         * {
             font-family: sans-serif;
         }
         .form {
@@ -22,127 +22,104 @@
             top: 58px;
             left: 10px;
         }
+
         #G {
             position: relative;
             right: 29px;
             top: -16px;
             color: #2675d8;
-            }
+        }
 
         #o-1 {
             position: relative;
             right: 19px;
             top: -50px;
             color: #ec584b;
-            }
+        }
+
         #o-2 {
             position: relative;
             right: 10px;
             top: -84px;
             color: #fbbc05;
         }
+
         #g {
             position: relative;
             right: 0px;
             top: -118px;
             color: #2675d8;
-            }
-        #l{
+        }
+
+        #l {
             position: relative;
             right: -6px;
             top: -152px;
             color: #49b165;
         }
-        #e{
+
+        #e {
             position: relative;
             right: -13px;
             top: -186px;
             color: #ec584b;
         }
-        #hd-1{
+
+        #hd-1 {
             font-size: 1.5rem;
             position: relative;
             bottom: 138px;
         }
-        #para-1{
+
+        #para-1 {
             position: relative;
             bottom: 152px;
         }
-        select {
-            height: 45px;
-            width: 105px;
-            position: relative;
-            bottom: 131px;
-            right: 135px;
-            font-size: 17px;
-            text-align: center;
-            color: grey;
-            cursor: default;
-        }
 
-        #input-1{
-            height: 40px;
-            width: 105px;
-            position: relative;
-            bottom: 176px;
-            left: 57px;
-            text-align: center;
-            font-size: 1.05rem;
-        }
-        #input-2{
-            height: 40px;
-            width: 105px;
-            position: relative;
-            bottom: 176px;
-            left: 76px;
-            text-align: center;
-            font-size: 1.05rem;
-        }
-        #gender{
+        #input-1 {
+            border: 1px solid #adafb193;
             height: 45px;
             width: 379px;
             position: relative;
-            left: 34px;
-            bottom: 163px;
-            cursor: default;
+            left: 3px;
+            bottom: 138px;
+            font-size: 1.01rem;
+            border-radius: 4px;
         }
-        #a-1{
-            text-decoration: none;
+        #input-2 {
+            border: 1px solid #adafb193;
+            height: 45px;
+            width: 379px;
             position: relative;
-            right: 340px;
-            bottom: 125px;
-            color: #1a73e8;
+            left: 3px;
+            bottom: 113px;
+            font-size: 1.01rem;
+            border-radius: 4px;
         }
-        #a-2{
-            text-decoration: none;
-            position: relative;
-            right: 341px;
-            bottom: 125px;
-            color: #1a73e8;
+        #input-1:focus{
+            padding: 10px;
         }
-        #a-3{
-            color: #1a73e8;
+        #input-2:focus{
+            padding: 10px;
             position: relative;
-            right: 97px;
-            bottom: 156px;
-            text-decoration: none;
+            right: 20px;
         }
         #button {
            position: relative;
-           left: 160px;
-           bottom: 100px;
-           text-decoration: none;
+           left: 800px;
+           bottom: 64px;
            border: 2px solid black;
            padding: 5px 10px;
            background-color: #1a73e8;
            color: white;
            border-radius: 7px;
+           text-decoration: none;
            height: 30px;
            width: 60px;
-           
-        }
+           }
     </style>
 </head>
+
 <body>
     <center>
         <div class="form">
@@ -154,43 +131,15 @@
                 <p id="l">l</p>
                 <p id="e">e</p>
             </div>
-            <p id="hd-1">Basic information</p>
-            <p id="para-1">Enter your birthday and gender</p>
-            <div class="selector-1">
-                <form>
-                    <select name="months" required>
-                        <option id="opt" disabled selected hidden>Month</option>
-                        <option name="1">January</option>
-                        <option name="2">February</option>
-                        <option name="3">March</option>
-                        <option name="4">April</option>
-                        <option name="5">May</option>
-                        <option name="6">June</option>
-                        <option name="7">July</option>
-                        <option name="8">August</option>
-                        <option name="9">September</option>
-                        <option name="10">Octuber</option>
-                        <option name="11">November</option>
-                        <option name="12">December</option>
-                    </select>
-                </form>
-            </div>
-            <input id="input-1" required placeholder="Day">
-            <input id="input-2" required placeholder="Year">
-            <select id="gender" name="gender" required>
-                <option id="gen" disabled selected hidden>Gender</option>
-                <option name="male">Male</option>
-                <option name="female">Female</option>
-                <option name="rather not say">Rather not say</option>
-                <option name="custom">Custom</option>
-            </select>
-            <a id="a-1" href="https://support.google.com/accounts/answer/1733224?hl=en" target="_blank"><strong>Why</strong></a>
-            <a id="a-2" href="https://support.google.com/accounts/answer/1733224?hl=en" target="_blank"><strong>we</strong></a>
-            <a id="a-3" href="https://support.google.com/accounts/answer/1733224?hl=en" target="_blank"><strong>ask?</strong></a>
-            <form action="/submit.html">
-            <button id="button"><strong>Next</strong></button>
-        </form> 
-        </div>
-    </center>
+            <p id="hd-1">Create a Google Account</p>
+            <p id="para-1">Enter your name</p>
+            <input id="input-1" required placeholder="&nbsp First name"><br>
+            <input id="input-2" placeholder="&nbsp Last name (optional)">
+        </center>
+    </div>
+    <form action="index.html">
+    <button id="button" required><strong>Next</strong></button> 
+</form>
 </body>
+
 </html>
